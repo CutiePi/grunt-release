@@ -348,7 +348,7 @@ module.exports = function(grunt) {
             .then(ifEnabled('push', push))
             .then(ifEnabled('pushTags', pushTags))
             .then(ifEnabled('npm', publish))
-            .then(ifEnabled('github', githubRelease))
+            .then(ifEnabled('githubRelease', githubRelease))
             .then(ifEnabled('afterRelease', runTasks.bind(null, 'afterRelease')))
             .catch(function(msg) {
                 grunt.fail.warn(msg || 'release failed');
