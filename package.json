@@ -1,6 +1,6 @@
 {
   "name": "grunt-release",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "description": "Release a new version of your Node-based project",
   "main": "Gruntfile.js",
   "scripts": {
@@ -9,9 +9,12 @@
   "engines": {
     "node": ">=0.10"
   },
+  "publishConfig": {
+    "registry": "https://stha8p0co.iad.ca.inet:8443/repository/npm-intact/"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/geddski/grunt-release.git"
+    "url": "https://github.com/CutiePi/grunt-release.git"
   },
   "keywords": [
     "gruntplugin",
