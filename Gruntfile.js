@@ -18,14 +18,15 @@ module.exports = function(grunt) {
         commitMessage: 'v<%= version %>',
         add: true,
         commit: true,
-        tag: true,
+        tag: false,
         push: true,
         pushTags: true,
         npm: true,
         npmtag: false,
+        githubRelease: false,
         github: {
-          repo: 'geddski/grunt-release',
-          accessTokenVar: 'GITHUB_ACCESS_TOKEN'
+          repo: 'CutiePi/grunt-release',
+          accessTokenVar: 'GITHUB_ACCESS_TOKEN_CUTIEPI'
         }
       }
     },
